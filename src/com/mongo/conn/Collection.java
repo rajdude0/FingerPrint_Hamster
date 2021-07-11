@@ -10,7 +10,7 @@ abstract public class Collection {
 	protected MongoCollection<Document> collection;
 	public Collection(){
 		this.mongoConn = MongoConn.getInstance();
-		this.mongoConn.setWorkingDatabase("KankaiMunicipality");
+		this.mongoConn.setWorkingDatabase(System.getenv("DB_COLL_NAME"));
 		this.collection = mongoConn.getCollection(this.getCollectionName());
 	}
 	
