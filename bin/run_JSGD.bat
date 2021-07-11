@@ -1,1 +1,0 @@
-java -cp ".;AbsoluteLayout.jar;FDxSDKPro.jar" SecuGen.FDxSDKPro.samples.JSGD
